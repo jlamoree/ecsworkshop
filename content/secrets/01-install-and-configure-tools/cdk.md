@@ -11,7 +11,7 @@ hidden: true
 sudo yum -y install nodejs python
 
 # Setting CDK Version
-export AWS_CDK_VERSION="1.95.1"
+export AWS_CDK_VERSION="1.122.0"
 
 # Install aws-cdk
 npm install -g --force aws-cdk@$AWS_CDK_VERSION
@@ -24,6 +24,8 @@ aws-cdk.aws_ecs==$AWS_CDK_VERSION \
 aws-cdk.aws_servicediscovery==$AWS_CDK_VERSION \
 aws_cdk.aws_iam==$AWS_CDK_VERSION \
 aws_cdk.aws_efs==$AWS_CDK_VERSION \
+aws_cdk.aws-batch==$AWS_CDK_VERSION \
+aws_cdk.aws-apigatewayv2==$AWS_CDK_VERSION \
 awscli \
 awslogs
 
